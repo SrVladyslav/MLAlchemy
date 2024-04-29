@@ -297,4 +297,4 @@ context = torch.zeros((1,1), dtype=torch.long, device=device)
 print(decode(m.generate(context, max_new_tokens=500)[0].tolist()))
 
 # Saving the model
-torch.save(model.state_dict(), "./modelWeight.pt")
+torch.save(model.state_dict(), "./../weights/modelWeight.pt")
